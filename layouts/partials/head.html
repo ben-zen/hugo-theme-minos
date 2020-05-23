@@ -19,5 +19,8 @@
         <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
 
+    {{ range .Site.Params.customJs -}}
+	<script src="{{ .url | absURL }}" {{ if .crossOrigin }}crossorigin="{{ .crossOrigin }}"{{ end }} ></script>
+    {{- end }}
     {{ hugo.Generator }}
 </head>
