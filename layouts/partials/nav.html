@@ -3,13 +3,13 @@
     {{ if .NextPage }}
     <a href="{{ .NextPage.RelPermalink }}" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            {{ .NextPage.Title }}
+            {{ .NextPage.Title | markdownify }}
         </div>
     </a>
     {{ end }}
     {{ if .PrevPage }}
     <a href="{{ .PrevPage.RelPermalink }}" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">{{ .PrevPage.Title  }}&nbsp;<span>&gt;</span></div>
+        <div class="article-nav-title">{{ .PrevPage.Title | markdownify }}&nbsp;<span>&gt;</span></div>
     </a>
     {{ end }}
 </nav>
