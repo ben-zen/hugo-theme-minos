@@ -2,7 +2,7 @@
     <div class="article-inner">
         {{ if .Title }}
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">{{ .Title }}</h1>
+            <h1 class="article-title" itemprop="name">{{ .Title | markdownify }}</h1>
         </header>
         {{ end }}
         <div class="article-meta">
