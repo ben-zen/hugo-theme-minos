@@ -1096,3 +1096,12 @@ pre .php .xml {
   font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }
+figure {
+  border-bottom: 1px dashed #a8a8a2;
+  border-top: 1px dashed #a8a8a2;
+  padding: 1em 2em;
+}
+figcaption p {
+  text-align: center;
+  margin: 1em 0 0 !important;
+}
